@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NoticeHeader = () => {
     return (
         <div className="news_ticker bg-warning">
-  <div style={{Width:"90% 0% 90% 0%"}}>
+  <div className="container">
     <marquee behavior="scroll" direction="left" onMouseOver="this.stop();" onMouseOut="this.start();">
       <Link to="#" target="_blank">Universities the winners if Labor assumes government</Link> ||
       <Link to="#" target="_blank">Overseas students are driving rapid population growth</Link> || 
