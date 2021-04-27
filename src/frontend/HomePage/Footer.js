@@ -137,7 +137,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-<a href="#" class="scrollup" style={{display: "none"}}><i class="ion-ios-arrow-up"></i></a> 
+<a href="#" className="scrollup" style={{display: "none"}}><i className="ion-ios-arrow-up"></i></a> 
 
 
         </>
