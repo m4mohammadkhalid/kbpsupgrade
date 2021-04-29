@@ -18,14 +18,14 @@ const Header = () => {
 
       <div className="header">
         <div className="header-left">
-          <Link to="/" className="logo">
+          <Link to="/dashboard" className="logo">
             <img src="images/logo.png" alt="Logo" />
           </Link>
-          <Link to="/" className="logo logo-small">
+          <Link to="/dashboard" className="logo logo-small">
             <img src="images/logo-small.png" alt="Logo" width={30} height={30} />
           </Link>
         </div>
-        <Link to="" id="toggle_btn">
+        <Link to="/dashboard" id="toggle_btn">
           <i className="fas fa-align-left" />
         </Link>
         <div className="top-nav-search">

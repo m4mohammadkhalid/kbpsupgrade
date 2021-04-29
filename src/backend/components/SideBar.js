@@ -16,7 +16,7 @@ const SideBar = () => {
             <span>Main Menu</span>
           </li>
           <li className="active"> 
-            <Link to="/"><i className="fas fa-th-large" /> <span>Dashboard</span></Link>
+            <Link to="/dashboard"><i className="fas fa-th-large" /> <span>Dashboard</span></Link>
           </li>
           <li className="submenu">
          
