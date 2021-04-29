@@ -27,7 +27,7 @@ const OurFaculty = () => {
       <div className="col-md-4">
         <div className="overlay_bg_light_green_90 icon_box text-center text_white background_bg animation" data-animation="fadeInUp" data-animation-delay="0.4s">
           <div className="intro_desc">
-            <h5>Faculty of Computer Science</h5>
+            <h5>Faculty of Computer S</h5>
             <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
           </div>
         </div>

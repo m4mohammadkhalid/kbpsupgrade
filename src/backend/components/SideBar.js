@@ -18,6 +18,9 @@ const SideBar = () => {
           <li className="active"> 
             <Link to="/dashboard"><i className="fas fa-th-large" /> <span>Dashboard</span></Link>
           </li>
+          <li > 
+            <Link to="/Blank"><i className="fas fa-code" /> <span>Blank</span></Link>
+          </li>
           <li className="submenu">
          
             <Link  id="basic-nav-dropdown"><i className="fas fa-user-graduate" /> <span> Students</span> <span className="menu-arrow" /></Link>
@@ -89,7 +92,7 @@ const SideBar = () => {
           <li> 
             <Link to="library"><i className="fas fa-book" /> <span>Library</span></Link>
           </li>
-          <li className="menu-title"> 
+{/*          <li className="menu-title"> 
             <span>Pages</span>
           </li>
           <li className="submenu">
@@ -140,6 +143,7 @@ const SideBar = () => {
               <li><Link to="data-tables">Data Table </Link></li>
             </ul>
           </li>
+           
           <li className="submenu">
             <Link to=""><i className="fas fa-code" /> <span>Multi Level</span> <span className="menu-arrow" /></Link>
             <ul>
@@ -161,7 +165,8 @@ const SideBar = () => {
                 <Link to=""> <span>Level 1</span></Link>
               </li>
             </ul>
-          </li>
+          </li> */}
+        
         </ul>
       </div>
     </div>

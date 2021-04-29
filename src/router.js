@@ -6,6 +6,7 @@ import Student from './backend/Pages/Student'
 import StudentDetails from './backend/Pages/StudentDetails'
 import Login from './backend/Pages/Login';
 import Register from './backend/Pages/Register';
+import BlankPage from './backend/Pages/BlankPage';
 
 export const Routes = () => {
   return (
@@ -23,6 +24,7 @@ export const Routes = () => {
         <Route exact path="/studentdetails" component={StudentDetails} />
         <Route exact path="/admin" component={Login} />
         <Route exact path="/register" component={Register} />
+        <Route exact path="/Blank" component={BlankPage} />
 
 
       </Switch>

@@ -1,89 +1,105 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-
+import '../../App.css'
 const OurTeachers = () => {
     return (
-<section className="bg_gray">
-  <div className="container">	
-    <div className="row">
-      <div className="col-12">
-        <div className="heading_s1 text-center animation" data-animation="fadeInUp" data-animation-delay="0.01s">
-          <h2>Our Teachers</h2>
-        </div>
-      </div>
-    </div>
-    <div className="row">
-      <div className="col-lg-3 col-sm-6">
-        <div className="team_box team_style2 box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-          <div className="team_img">
-            <img src="assets/images/team_img1.jpg" alt="team1" />
-          </div>
-          <div className="team_title text-center">
-            <h5><Link to="#">Aden Smith</Link></h5>
-            <span>Head Of Department</span>
-            <ul className="list_none social_icons">
-              <li><Link to="#" className="sc_facebook"><i className="ion-social-facebook" /></Link></li>
-              <li><Link to="#" className="sc_twitter"><i className="ion-social-twitter" /></Link></li>
-              <li><Link to="#" className="sc_gplus"><i className="ion-social-googleplus" /></Link></li>
-              <li><Link to="#" className="sc_instagram"><i className="ion-social-instagram-outline" /></Link></li>
-            </ul>
+      <section className="instructor-section gradient-bg">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="section-title text-center">
+              <h2>top online <span>instructors</span></h2>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="col-lg-3 col-sm-6">
-        <div className="team_box team_style2 box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.03s">
-          <div className="team_img">
-            <img src="assets/images/team_img2.jpg" alt="team2" />
+        <div className="row">
+          <div className="col-lg-3 col-md-6">
+            <div className="single-instructor">
+             
+              <div className="instructor-image">
+                <Link to="#"><img src="assets/images/instructor-1.png" alt="khalid" /></Link>
+              </div>
+              <div className="instructor-content">
+                <h4><Link to="#">john doe</Link></h4>
+                <span>founder CEO</span>
+              </div>
+              <div className="hover-state">
+                <ul>
+                  <li><Link to="#"><i className="fa fa-facebook" /></Link></li>
+                  <li><Link to="#"><i className="fa fa-twitter" /></Link></li>
+                  <li><Link to="#"><i className="fa fa-linkedin" /></Link></li>
+                  <li><Link to="#"><i className="fa fa-instagram" /></Link></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div className="team_title text-center">
-            <h5><Link to="#">Kally Brooks</Link></h5>
-            <span>Professor</span>
-            <ul className="list_none social_icons">
-              <li><Link to="#" className="sc_facebook"><i className="ion-social-facebook" /></Link></li>
-              <li><Link to="#" className="sc_twitter"><i className="ion-social-twitter" /></Link></li>
-              <li><Link to="#" className="sc_gplus"><i className="ion-social-googleplus" /></Link></li>
-              <li><Link to="#" className="sc_instagram"><i className="ion-social-instagram-outline" /></Link></li>
-            </ul>
+          <div className="col-lg-3 col-md-6">
+            <div className="single-instructor diffrent-bg-color">
+              <div className="instructor-image">
+                <Link to="#"><img src="assets/images/instructor-3.png" alt="khalid" /></Link>
+              </div>
+              <div className="instructor-content">
+                <h4><Link to="#">arya stark</Link></h4>
+                <span>Chemistry Teacher</span>
+              </div>
+              <div className="hover-state">
+                <ul>
+                  <li><Link to="#"><i className="fa fa-facebook" /></Link></li>
+                  <li><Link to="#"><i className="fa fa-twitter" /></Link></li>
+                  <li><Link to="#"><i className="fa fa-linkedin" /></Link></li>
+                  <li><Link to="#"><i className="fa fa-instagram" /></Link></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6">
+            <div className="single-instructor">
+              <div className="instructor-image">
+                <Link to="#"><img src="assets/images/instructor-2.png" alt="khalid" /></Link>
+              </div>
+              <div className="instructor-content">
+                <h4><Link to="#">chris wokes</Link></h4>
+                <span>Physics Teacher</span>
+              </div>
+              <div className="hover-state">
+                <ul>
+                  <li><Link to="#"><i className="fa fa-facebook" /></Link></li>
+                  <li><Link to="#"><i className="fa fa-twitter" /></Link></li>
+                  <li><Link to="#"><i className="fa fa-linkedin" /></Link></li>
+                  <li><Link to="#"><i className="fa fa-instagram" /></Link></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6">
+            <div className="single-instructor diffrent-bg-color">
+              <div className="instructor-image">
+                <Link to="#"><img src="assets/images/instructor-4.png" alt="khalid" /></Link>
+              </div>
+              <div className="instructor-content">
+                <h4><Link to="#">devid walter</Link></h4>
+                <span>Math Teacher</span>
+              </div>
+              <div className="hover-state">
+                <ul>
+                  <li><Link to="#"><i className="fa fa-facebook" /></Link></li>
+                  <li><Link to="#"><i className="fa fa-twitter" /></Link></li>
+                  <li><Link to="#"><i className="fa fa-linkedin" /></Link></li>
+                  <li><Link to="#"><i className="fa fa-instagram" /></Link></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
+            <div style={{paddingBottom: '30px'}} className="instructor-button margin-top-20 text-center">
+              <Link to="#" className="template-button">see more instructor</Link>
+            </div>
           </div>
         </div>
       </div>
-      <div className="col-lg-3 col-sm-6">
-        <div className="team_box team_style2 box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.04s">
-          <div className="team_img">
-            <img src="assets/images/team_img3.jpg" alt="team3" />
-          </div>
-          <div className="team_title text-center">
-            <h5><Link to="#">David clark</Link></h5>
-            <span>Chemistry Teacher</span>
-            <ul className="list_none social_icons">
-              <li><Link to="#" className="sc_facebook"><i className="ion-social-facebook" /></Link></li>
-              <li><Link to="#" className="sc_twitter"><i className="ion-social-twitter" /></Link></li>
-              <li><Link to="#" className="sc_gplus"><i className="ion-social-googleplus" /></Link></li>
-              <li><Link to="#" className="sc_instagram"><i className="ion-social-instagram-outline" /></Link></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className="col-lg-3 col-sm-6">
-        <div className="team_box team_style2 box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.05s">
-          <div className="team_img">
-            <img src="assets/images/team_img4.jpg" alt="team4" />
-          </div>
-          <div className="team_title text-center">
-            <h5><Link to="#">Rebeka Alig</Link></h5>
-            <span>English Teacher</span>
-            <ul className="list_none social_icons">
-              <li><Link to="#" className="sc_facebook"><i className="ion-social-facebook" /></Link></li>
-              <li><Link to="#" className="sc_twitter"><i className="ion-social-twitter" /></Link></li>
-              <li><Link to="#" className="sc_gplus"><i className="ion-social-googleplus" /></Link></li>
-              <li><Link to="#" className="sc_instagram"><i className="ion-social-instagram-outline" /></Link></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     )
 }
