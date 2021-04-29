@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   React.useEffect(() => {
     const script = document.createElement('script');
-    script.src = "/assets/js/script.js";
+    script.src = "https://preschool.dreamguystech.com/html-template/assets/js/script.js";
     script.async = true;
     document.body.appendChild(script);
   return () => {
