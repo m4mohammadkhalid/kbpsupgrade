@@ -75,8 +75,9 @@ textarea:focus {
 	box-shadow:  none !important;
 }
 section {
-	padding: 40px 0;
+	padding: 20px 0;
 	position:relative;
+
 	width: 100%;
 }
 section.small_pt,
@@ -85,7 +86,7 @@ section.small_pt,
 }
 section.small_pb,
 .top_footer.small_pb {
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 }
 .small_padding {
     padding: 30px;
@@ -2613,7 +2614,7 @@ marquee {
 	margin-bottom: 15px;
 }
 .top_footer {
-	padding: 100px 0;
+	padding-top: 20px;
 }
 footer p {
 	font-size: 14px;
@@ -2674,10 +2675,7 @@ footer .widget_title {
 	text-transform: capitalize;
 	position: relative;
 }
-.bottom_footer {
-	padding: 30px 0;
-	position: relative;
-}
+
 .footer_link li {
 	display: inline-block;
 	position: relative;

@@ -27,7 +27,7 @@ const Footer = () => {
                     </div>
                 </div>
             </section>
-            <footer className="bg_blue_dark footer_dark">
+            <footer  style={{backgroundImage:'url("http://tabula.bold-themes.com/sunny/wp-content/uploads/sites/2/2019/05/background_footer.jpg")'}} className="bg_blue_dark footer_dark">
                 <div className="top_footer">
                     <div className="container">
                         <div className="row">

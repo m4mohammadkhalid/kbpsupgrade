@@ -4,9 +4,11 @@ import Footer from './HomePage/Footer'
 import GetAInquiry from './HomePage/GetAInquiry'
 import Header from './HomePage/Header'
 import NoOfStudents from './HomePage/NoOfStudents'
+import NoticeEvent from './HomePage/NoticeEvent'
 import NoticeHeader from './HomePage/NoticeHeader'
 import OurFaculty from './HomePage/OurFaculty'
 import OurTeachers from './HomePage/OurTeachers'
+import SchoolTime from './HomePage/SchoolTime'
 import Slider from './HomePage/Slider'
 import StudentSay from './HomePage/StudentSay'
 import Text from './HomePage/Text'
@@ -20,6 +22,8 @@ const Index = () => {
          <NoticeHeader />
         <Header />
         <Slider />
+        <SchoolTime />
+        <NoticeEvent />
         <WhyChoseUs />
         <Text />
         <AboutUs />
