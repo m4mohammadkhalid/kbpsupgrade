@@ -8,6 +8,7 @@ import Login from './backend/Pages/Login';
 import Register from './backend/Pages/Register';
 import BlankPage from './backend/Pages/BlankPage';
 import AboutIndex from './frontend/AboutPage/AboutIndex';
+import IndexGallery from './frontend/Gallery/IndexGallery';
 
 export const Routes = () => {
   return (
@@ -19,6 +20,8 @@ export const Routes = () => {
           <Redirect to="/" />
         </Route>
         <Route exact path="/about" component={AboutIndex} />
+        <Route exact path="/gallery" component={IndexGallery} />
+
 
          {/* admin panel */}
         <Route exact path="/dashboard" component={AdminIndex} />
