@@ -10,41 +10,29 @@ const Container = touchWithMouseHOC(CarouselContainer)
 
 const data = [
     {
-        title: 'Card 1',
+        title: 'Name 1',
         background: '#0072bb',
-        text: `react-touch-carousel only handles the trouble parts, i.e.
-        - touch gestures parsing
-        - scroll cursor rounding and modding
-        - items padding and looping
-        - auto playing`
+        image:'assets/images/instructor-3.png'
     },
     {
-        title: 'Card 2',
+        title: 'Name 2',
         background: '#ff4c3b',
-        text: `It is left up to you to
-        - decide the carousel structure
-        - render each item in the carousel
-        - style everything
-        - add some fancy decorators like dots`
+        image:'assets/images/instructor-1.png'
     },
     {
-        title: 'Card 3',
+        title: 'Name 3',
         background: '#ffca18',
-        text: `Install it by
-        - npm install --save react-touch-carousel`
+        image:'assets/images/instructor-2.png'
     },
     {
-        title: 'Card 4',
+        title: 'Name 4',
         background: '#44c1c1',
-        text: `See some example code in the '/examples' dir at GitHub. And you can run and play with the code after cloning it, by
-        - npm install
-        - npm run dev
-        - open localhost:5000`
+        image:'assets/images/instructor-3.png'
     },
     {
-        title: 'Card 5',
+        title: 'Name 5',
         background: '#29c53c',
-        text: 'react-touch-carousel is released under MIT license'
+        image:'assets/images/instructor-1.png'
     }
 ]
 
@@ -74,11 +62,12 @@ function renderCard(index, modIndex, cursor) {
                 style={{
                     backgroundColor: item.background,
                     transform: `rotate(${rotate}deg)`,
-                    zIndex: onTop ? 1 : 0
+                    zIndex: onTop ? 1 : 0,
+                    borderRadius:'60px'
                 }}
             >
                 <div className='carousel-title'>{item.title}</div>
-                <div className='carousel-text'>{item.text}</div>
+                <div className='carousel-text'><img src={item.image} alt="khalid" /></div>
             </div>
         </div>
     )
@@ -88,7 +77,9 @@ const Text = () => {
     return (
         <>
             <div style={{ backgroundImage: 'url("assets/images/banner5.jpg")',paddingTop:'10px',paddingBottom:'10px' }}>
-               <h1 style={{color:'green'}}>Top Student</h1>
+            <div className="heading_s1 text-center">
+                <h2 style={{ color: 'green', paddingTop:'14px' }}>Top 10 Student</h2>
+              </div>
                 <div className="col-md-12">
                         <TouchCarousel
                             component={Container}

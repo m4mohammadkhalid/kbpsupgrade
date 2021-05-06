@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../../App.css'
 const SchoolTime = () => {
             
     const currTime=new Date().toLocaleTimeString();
@@ -24,17 +24,13 @@ const SchoolTime = () => {
         <img src="assets/images/round-shape-3.png" alt="shape" className="round-shape-3" />
       </div>
       <div className="row">
-        <div className="col-lg-4">
+        <div className="col-6 col-lg-6">
           <div className="countdown-left">
             <h2 className="home-2"><span>{Schooltime}</span></h2>
           </div>
         </div>
-        <div className="col-lg-4">
-          <div  style={{textAlign:'center',}}>
-        <button type="button" className="btn btn-outline-success" style={{paddingTop:'10px',borderRadius:'10px'}}>Routing</button>
-          </div>
-        </div>
-        <div className="col-lg-4">
+       
+        <div className="col-6 col-lg-6">
           <div className="countdown-right">
             <ul className="countdown">
               <li>

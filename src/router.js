@@ -7,6 +7,7 @@ import StudentDetails from './backend/Pages/StudentDetails'
 import Login from './backend/Pages/Login';
 import Register from './backend/Pages/Register';
 import BlankPage from './backend/Pages/BlankPage';
+import AboutIndex from './frontend/AboutPage/AboutIndex';
 
 export const Routes = () => {
   return (
@@ -17,6 +18,7 @@ export const Routes = () => {
         <Route exact path="/">
           <Redirect to="/" />
         </Route>
+        <Route exact path="/about" component={AboutIndex} />
 
          {/* admin panel */}
         <Route exact path="/dashboard" component={AdminIndex} />

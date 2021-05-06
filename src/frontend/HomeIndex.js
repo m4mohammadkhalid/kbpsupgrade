@@ -4,7 +4,7 @@ import Footer from './HomePage/Footer'
 import GetAInquiry from './HomePage/GetAInquiry'
 import Header from './HomePage/Header'
 import NoOfStudents from './HomePage/NoOfStudents'
-import NoticeEvent from './HomePage/NoticeEvent'
+//import NoticeEvent from './HomePage/NoticeEvent'
 import NoticeHeader from './HomePage/NoticeHeader'
 import OurFaculty from './HomePage/OurFaculty'
 import OurTeachers from './HomePage/OurTeachers'
@@ -23,7 +23,7 @@ const Index = () => {
         <Header />
         <Slider />
         <SchoolTime />
-        <NoticeEvent />
+        {/* <NoticeEvent /> */}
         <WhyChoseUs />
         <Text />
         <AboutUs />
