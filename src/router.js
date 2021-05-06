@@ -9,6 +9,7 @@ import Register from './backend/Pages/Register';
 import BlankPage from './backend/Pages/BlankPage';
 import AboutIndex from './frontend/AboutPage/AboutIndex';
 import IndexGallery from './frontend/Gallery/IndexGallery';
+import IndexContact from './frontend/Contact/IndexContact';
 
 export const Routes = () => {
   return (
@@ -21,6 +22,8 @@ export const Routes = () => {
         </Route>
         <Route exact path="/about" component={AboutIndex} />
         <Route exact path="/gallery" component={IndexGallery} />
+        <Route exact path="/contact" component={IndexContact} />
+
 
 
          {/* admin panel */}
