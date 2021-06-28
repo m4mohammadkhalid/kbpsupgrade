@@ -1,4 +1,5 @@
 import React from 'react';
+import {Provider} from "react-redux"
 import { Route, Switch, Redirect } from 'react-router-dom';
 import AdminIndex from './backend/AdminIndex';
 import HomeIndex from './frontend/HomeIndex'
@@ -10,12 +11,17 @@ import BlankPage from './backend/Pages/BlankPage';
 import AboutIndex from './frontend/AboutPage/AboutIndex';
 import IndexGallery from './frontend/Gallery/IndexGallery';
 import IndexContact from './frontend/Contact/IndexContact';
-
+import Store from './store';
+import PrivateRoute from './private/PrivateRoute';
+import RouteLinks from './private/RouteLinks';
+import NotFounds from './compoenets/NotFounds';
+import PostCreate from './backend/Pages/PostCreate'
 export const Routes = () => {
   return (
     <>
      
       <Switch>
+        <Provider store={Store}>
         <Route exact path="/" component={HomeIndex} />
         <Route exact path="/">
           <Redirect to="/" />
@@ -25,16 +31,20 @@ export const Routes = () => {
         <Route exact path="/contact" component={IndexContact} />
 
 
-
+        
          {/* admin panel */}
-        <Route exact path="/dashboard" component={AdminIndex} />
+        <PrivateRoute exact path="/dashboard" component={AdminIndex} />
         <Route exact path="/student" component={Student} />
         <Route exact path="/studentdetails" component={StudentDetails} />
         <Route exact path="/admin" component={Login} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/Blank" component={BlankPage} />
+        <Route exact path="/create" component={PostCreate} />
 
 
+
+        <Route component={NotFounds} />
+        </Provider>
       </Switch>
      
     </>

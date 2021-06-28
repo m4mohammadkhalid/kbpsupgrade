@@ -29,7 +29,7 @@ const SideBar = () => {
 
               <li><Link to="/student">Student List</Link></li>
               <li><Link to="studentdetails">Student View</Link></li>
-              <li><Link to="add-student">Student Add</Link></li>
+              <li><Link to="/create">Student Add</Link></li>
               <li><Link to="edit-student">Student Edit</Link></li>
             </ul>
         
