@@ -5,7 +5,7 @@ const PrivateRoute = (props) => {
 	return user ? (
 		<Route path={props.path} exact={props.exact} component={props.component} />
 	) : (
-		<Redirect to='/' />
+		<Redirect to='/admin' />
 	);
 };
 export default PrivateRoute;
