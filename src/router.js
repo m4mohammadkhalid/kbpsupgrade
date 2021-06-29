@@ -33,13 +33,13 @@ export const Routes = () => {
 
         
          {/* admin panel */}
-        <PrivateRoute exact path="/dashboard" component={AdminIndex} />
-        <Route exact path="/student" component={Student} />
-        <Route exact path="/studentdetails" component={StudentDetails} />
-        <Route exact path="/admin" component={Login} />
+         <Route exact path="/admin" component={Login} />
         <Route exact path="/register" component={Register} />
-        <Route exact path="/Blank" component={BlankPage} />
-        <Route exact path="/create" component={PostCreate} />
+        <PrivateRoute exact path="/dashboard" component={AdminIndex} />
+        <PrivateRoute exact path="/student" component={Student} />
+        <PrivateRoute exact path="/studentdetails" component={StudentDetails} />
+        <PrivateRoute exact path="/Blank" component={BlankPage} />
+        <PrivateRoute exact path="/create" component={PostCreate} />
 
 
 
