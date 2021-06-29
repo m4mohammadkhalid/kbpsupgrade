@@ -13,7 +13,7 @@ import IndexGallery from './frontend/Gallery/IndexGallery';
 import IndexContact from './frontend/Contact/IndexContact';
 import Store from './store';
 import PrivateRoute from './private/PrivateRoute';
-import RouteLinks from './private/RouteLinks';
+//import RouteLinks from './private/RouteLinks';
 import NotFounds from './compoenets/NotFounds';
 import PostCreate from './backend/Pages/PostCreate'
 export const Routes = () => {
