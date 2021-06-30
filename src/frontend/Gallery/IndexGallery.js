@@ -18,9 +18,9 @@ const IndexGallery = () => {
   <div className="portfolio-menu mt-2 mb-4">
     <ul>
       <li className="btn btn-outline-dark active" data-filter="*">All</li>
-      <li className="btn btn-outline-dark" data-filter=".gts">Girls T-shirt</li>
-      <li className="btn btn-outline-dark" data-filter=".lap">Laptops</li>
-      <li className="btn btn-outline-dark text" data-filter=".selfie">selfie</li>
+      <li className="btn btn-outline-dark" data-filter=".gts">Class 8th</li>
+      <li className="btn btn-outline-dark" data-filter=".lap">Class 6th</li>
+      <li className="btn btn-outline-dark text" data-filter=".selfie">Class 5th</li>
     </ul>
   </div>
   <div className="portfolio-item row">
@@ -34,7 +34,7 @@ const IndexGallery = () => {
         <img className="img-fluid" src="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-md-4 col-6 col-sm">
+    <div className="item  col-lg-3 col-md-4 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg" alt="khalid" />
       </a>
@@ -109,17 +109,17 @@ const IndexGallery = () => {
         <img className="img-fluid" src="https://image.freepik.com/free-photo/beautiful-girl-near-wall_1157-16401.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-md-4 col-6 col-sm">
+    <div className="item  col-lg-3 col-md-4 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-md-4 col-6 col-sm">
+    <div className="item  col-lg-3 col-md-4 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-md-4 col-6 col-sm">
+    <div className="item  col-lg-3 col-md-4 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" alt="khalid" />
       </a>
@@ -179,12 +179,12 @@ const IndexGallery = () => {
         <img className="img-fluid" src="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-md-4 col-6 col-sm">
+    <div className="item  col-lg-3 col-md-4 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-md-4 col-6 col-sm">
+    <div className="item  col-lg-3 col-md-4 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg" alt="khalid" />
       </a>
@@ -194,37 +194,37 @@ const IndexGallery = () => {
         <img className="img-fluid" src="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-md-4 col-6 col-sm">
+    <div className="item  col-lg-3 col-md-4 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-md-4 col-6 col-sm">
+    <div className="item  col-lg-3 col-md-4 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-md-4 col-6 col-sm">
+    <div className="item  col-lg-3 col-md-4 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-md-4 col-6 col-sm">
+    <div className="item  col-lg-3 col-md-4 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-6 col-sm">
+    <div className="item  col-lg-3 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-md-4 col-6 col-sm">
+    <div className="item  col-lg-3 col-md-4 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg" alt="khalid" />
       </a>
     </div>
-    <div className="item selfie col-lg-3 col-md-4 col-6 col-sm">
+    <div className="item  col-lg-3 col-md-4 col-6 col-sm">
       <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" className="fancylight popup-btn" data-fancybox-group="light">
         <img className="img-fluid" src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" alt="khalid" />
       </a>

@@ -13,7 +13,7 @@ const OurTeachers = () => {
 
           <div className="col-lg-12">
             <div className="section-title text-center">
-              <h2>top online <span>instructors</span></h2>
+              <h2><span>ADMINISTRATION</span></h2>
             </div>
           </div>
         </div>
