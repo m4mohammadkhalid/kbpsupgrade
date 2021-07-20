@@ -5,7 +5,7 @@ const Gallery=[
         name:"class10",
         category:"class8"
     },
-    
+     
     {
         id:1,
         image:"Image/2.jpg",
