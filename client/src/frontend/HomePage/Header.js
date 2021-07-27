@@ -126,7 +126,7 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink style={{color:'white'}} to="/admin" className="nav-link">
+                  <NavLink style={{color:'white'}} to="/login" className="nav-link">
                     Admin
                   </NavLink>
                 </li>

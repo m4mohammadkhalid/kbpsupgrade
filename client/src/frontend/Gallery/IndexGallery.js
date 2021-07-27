@@ -35,10 +35,10 @@ const IndexGallery = () => {
         <div className="portfolio-item row">
           {
               item.map((elem)=>{
-                const {name,category,image}=elem;
+                const {image}=elem;
                   return(
                     <div className="item  col-lg-3 col-6 col-sm">
-                    <a href="" className="fancylight popup-btn" data-fancybox-group="light">
+                    <a href="/" className="fancylight popup-btn" data-fancybox-group="light">
                       <img style={{ height: '160px', width: '300px' }} className="img-fluid" src={image} alt="khalid" />
                     </a>
                   </div>

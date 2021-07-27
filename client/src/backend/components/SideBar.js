@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import {Context} from "../../context/Context"
+import { useContext } from "react";
 
 const SideBar = () => {
-   
+  const {user,dispatch}= useContext(Context)
+   const handleLogout = ()=>{
+     dispatch({type:"LOGOUT"})
+   }
     return (
         <>
             
@@ -91,6 +95,8 @@ const SideBar = () => {
           </li>
           <li> 
             <Link to="library"><i className="fas fa-book" /> <span>Library</span></Link>
+          </li>
+          <li  onClick={handleLogout}>   {user && "LOGOUT"}
           </li>
 {/*          <li className="menu-title"> 
             <span>Pages</span>

@@ -13,7 +13,7 @@ const Footer = () => {
                             <div className="text_white cta_section">
                                 <div className="medium_divider d-block d-md-none" />
                                 <div className="heading_s1 heading_light">
-                                    <h2>Get The Coaching Training Today!</h2>
+                                    <h3>Better Education For A Better Tomorrow!</h3>
                                 </div>
                                 <p>If you are going to use a passage of embarrassing hidden in the middle of text</p>
                             </div>
@@ -33,7 +33,7 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-lg-3 col-sm-8 mb-4 mb-lg-0">
                                 <div className="footer_logo">
-                                    <Link to="index.html"><img alt="logo" src="assets/images/footer_logo.png" /></Link>
+                                    <p style={{fontSize:'34px', color:'white', fontWeight:'bold'}}>KBPS <span style={{color:'black'}}>SCHOOL</span></p>
                                 </div>
                                 <p>Phasellus blandit massa enim. elit id varius nunc. Lorem ipsum dolor sit amet, consectetur industry.</p>
                                 <ul className="contact_info contact_info_light list_none">
@@ -43,11 +43,11 @@ const Footer = () => {
                                     </li>
                                     <li>
                                         <i className="fa fa-envelope" />
-                                        <Link to="/cdn-cgi/l/email-protection#eb82858d84ab98829f8e858a868ec5888486"><span className="__cf_email__" data-cfemail="5e373038311e2d372a3b303f333b703d3133">[email&nbsp;protected]</span></Link>
+                                        <Link to="/"><span className="__cf_email__" data-cfemail="5e373038311e2d372a3b303f333b703d3133" style={{color:'white'}}>codesparrows@gmail.com</span></Link>
                                     </li>
                                     <li>
                                         <i className="fa fa-mobile-alt" />
-                                        <p>+ 457 789 789 65</p>
+                                        <p>+91 9102603030</p>
                                     </li>
                                 </ul>
                             </div>
@@ -125,7 +125,7 @@ const Footer = () => {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-md-6">
-                                <p className="copyright m-md-0 text-center text-md-left">© 2018 All Rights Reserved by Eduglobal.</p>
+                                <p className="copyright m-md-0 text-center text-md-left">© 2018 All Rights Reserved by KBPS SCHOOL.</p>
                             </div>
                             <div className="col-md-6">
                                 <ul className="list_none footer_link text-center text-md-right">

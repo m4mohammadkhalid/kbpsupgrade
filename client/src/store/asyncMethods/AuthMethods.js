@@ -1,10 +1,5 @@
 import axios from 'axios';
-import {
-	SET_LOADER,
-	CLOSE_LOADER,
-	SET_TOKEN,
-	REGISTER_ERRORS,
-	LOGIN_ERRORS,
+import {SET_LOADER,	CLOSE_LOADER, SET_TOKEN, REGISTER_ERRORS, LOGIN_ERRORS,
 } from '../types/UserTypes';
 export const postRegister = (state) => {
 	return async (dispatch) => {
@@ -19,6 +14,7 @@ export const postRegister = (state) => {
 			dispatch({ type: CLOSE_LOADER });
 			localStorage.setItem('myToken', data.token);
 			dispatch({ type: SET_TOKEN, payload: data.token });
+			console.log(data)
 		} catch (error) {
 			dispatch({ type: CLOSE_LOADER });
 			dispatch({
@@ -37,7 +33,7 @@ export const postLogin = (state) => {
 		};
 		try {
 			dispatch({ type: SET_LOADER });
-			const { data } = await axios.post('/admin', state, config);
+			const { data } = await axios.post('/login', state, config);
 			dispatch({ type: CLOSE_LOADER });
 			localStorage.setItem('myToken', data.token);
 			dispatch({ type: SET_TOKEN, payload: data.token });

@@ -116,7 +116,7 @@ const Header = () => {
           {/* User Menu */}
           <li className="nav-item dropdown has-arrow">
             <Link to="#" className="dropdown-toggle nav-link" data-toggle="dropdown">
-              <span className="user-img"><img className="rounded-circle" src="images/avatar-01.jpg" width={31} alt="RyanTaylor" /></span>
+              <span className="user-img"><img className="rounded-circle" src="images/avatar-01.jpg" style={{height:'30px',width:'30px'}} alt="RyanTaylor" /></span>
             </Link>
             <div className="dropdown-menu">
               <div className="user-header">

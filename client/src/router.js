@@ -1,6 +1,6 @@
 import React from 'react';
 import {Provider} from "react-redux"
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import AdminIndex from './backend/AdminIndex';
 import HomeIndex from './frontend/HomeIndex'
 import Student from './backend/Pages/Student'
@@ -19,9 +19,9 @@ import PostCreate from './backend/Pages/PostCreate'
 export const Routes = () => {
   return (
     <>
-     
-      <Switch>
         <Provider store={Store}>
+        <Router>
+      <Switch>
         <Route exact path="/" component={HomeIndex} />
         <Route exact path="/">
           <Redirect to="/" />
@@ -33,20 +33,20 @@ export const Routes = () => {
 
         
          {/* admin panel */}
-        <PrivateRoute exact path="/dashboard" component={AdminIndex} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
+        <Route exact path="/dashboard" component={AdminIndex} />
         <PrivateRoute exact path="/student" component={Student} />
         <PrivateRoute exact path="/studentdetails" component={StudentDetails} />
-        <Route exact path="/admin" component={Login} />
-        <Route exact path="/register" component={Register} />
         <PrivateRoute exact path="/Blank" component={BlankPage} />
         <PrivateRoute exact path="/create" component={PostCreate} />
 
 
 
         <Route component={NotFounds} />
-        </Provider>
       </Switch>
-     
+      </Router>
+      </Provider>
     </>
   );
 };

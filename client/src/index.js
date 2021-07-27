@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes } from './router';
+import {ContextProvider} from "./context/Context"
 ReactDOM.render(
-  <Router>
+  <React.StrictMode>
+    <ContextProvider>
   <Routes />
-</Router>,
+  </ContextProvider>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
