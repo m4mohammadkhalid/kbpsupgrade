@@ -25,13 +25,13 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "Skills",
+    title: "About Notice",
     path: "/skill",
     icon: <IoIcons.IoMdCodeWorking />,
     cName: "nav-text",
   },
   {
-    title: "Projects",
+    title: "Top Student",
     path: "/project",
     icon: <GoIcons.GoProject />,
     cName: "nav-text",

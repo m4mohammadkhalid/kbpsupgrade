@@ -28,7 +28,7 @@ const StudentSay = () => {
                 <span className="text_default">Co-Founder</span>
               </div>
               <div className="testi_desc">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium .</p>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@ const StudentSay = () => {
                 <span className="text_default">Co-Founder</span>
               </div>
               <div className="testi_desc">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium .</p>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ const StudentSay = () => {
                 <span className="text_default">Co-Founder</span>
               </div>
               <div className="testi_desc">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium .</p>
               </div>
             </div>
           </div>

@@ -23,7 +23,6 @@ const UpcomingEvents = () => {
           </div>
           <div className="event_date">
             <h5><span>16</span> May</h5>
-            <span className="event_time bg_default">10:00 am 3:00 pm</span>
           </div>
           <div className="content_desc bg-white">
             <h4 className="content_title"><Link to="#">Nullam id varius nunc id varius nunc</Link></h4>
@@ -41,7 +40,7 @@ const UpcomingEvents = () => {
             <div className="content_box event_box box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.03s">
               <div className="event_date">
                 <h5><span>27</span> Apr</h5>
-                <span className="event_time bg_default">9:00 am 4:00 pm</span>
+                
               </div>
               <div className="content_desc bg-white">	
                 <h4 className="content_title"><Link to="#">Nullam id varius nunc id varius nunc</Link></h4>
@@ -55,7 +54,7 @@ const UpcomingEvents = () => {
             <div className="content_box event_box box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.04s">
               <div className="event_date">
                 <h5><span>22</span> Jun</h5>
-                <span className="event_time bg_default">11:00 am 4:00 pm</span>
+                
               </div>
               <div className="content_desc bg-white">
                 <h4 className="content_title"><Link to="#">Nullam id varius nunc id varius nunc</Link></h4>
@@ -69,7 +68,7 @@ const UpcomingEvents = () => {
             <div className="content_box event_box box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.04s">
               <div className="event_date">
                 <h5><span>22</span> Jun</h5>
-                <span className="event_time bg_default">11:00 am 4:00 pm</span>
+                
               </div>
               <div className="content_desc bg-white">
                 <h4 className="content_title"><Link to="#">Nullam id varius nunc id varius nunc</Link></h4>

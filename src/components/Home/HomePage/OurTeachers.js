@@ -12,9 +12,13 @@ const OurTeachers = () => {
         <div className="row">
 
           <div className="col-lg-12">
-            <div className="section-title text-center">
-              <h2><span>ADMINISTRATION</span></h2>
-            </div>
+             <div className="text-center animation" data-animation="fadeInUp" data-animation-delay="0.01s">
+          <div className="heading_s1 text-center">
+            <h2>ADMINISTRATION</h2>
+          </div>
+          <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
+          <div className="small_divider" />
+        </div>
           </div>
         </div>
         <div className="row">
@@ -100,15 +104,7 @@ const OurTeachers = () => {
           </OwlCarousel>
        
         </div>
-        <div className="row">
-          <div className="col-lg-12">
-            <div style={{paddingBottom: '30px'}} className="instructor-button margin-top-20 text-center">
-              <Link to="#" className="template-button">see more instructor</Link>
-            </div>
-
-          </div>
-          
-        </div>
+        
         
       </div>
     </section>

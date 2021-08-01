@@ -60,7 +60,7 @@ const SkillModal = ({ id, header, skil, submitValue, colorButton }) => {
                             <label htmlFor="title" className="">
                               Name
                             </label>
-                            <input
+                            <textarea
                               type="text"
                               id="type"
                               name="type"

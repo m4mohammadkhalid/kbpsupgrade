@@ -1,6 +1,53 @@
-import React from 'react'
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+import serverApi from "../../../apis/serverApi";
+import { getMessages } from "../../../actions/messageAction";
+import { useDispatch } from "react-redux";
 
-const GetAInquiry = () => {
+const GetAInquiry = ({ reff }) => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+
+  const [loading, setloading] = useState(false);
+
+  const dispatch = useDispatch();
+
+  const onSubmit = async (data) => {
+    try {
+      setloading(true);
+      await serverApi.post("/messages", data);
+      setloading(false);
+      toast.success("Sent Successfully", {
+        position: "top-right",
+        autoClose: 7000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      reset();
+      dispatch(getMessages());
+    } catch (error) {
+      toast.error("an error happened while sending the message", {
+        position: "top-right",
+        autoClose: 7000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+    setloading(false);
+  };
+
+
     return (
 
       <section style={{backgroundImage:'url("assets/images/formbackground.jpg")',borderRadius: '20px',backgroundRepeat:'no-repeat',backgroundPosition: 'center',backgroundSize: 'cover'}}
@@ -24,70 +71,144 @@ const GetAInquiry = () => {
                 If you are going to use a passage of Lorem Ipsum, you need
                 to be sure there isn't anything hidden in the middle of text
               </p>
-              <form
-                method="post"
-                name="enq"
-                className="pt-md-2 form_transparent"
-              >
+              <form onSubmit={handleSubmit(onSubmit)} className="pt-md-2 form_transparent" >
                 <div className="row">
                   <div className="form-group col-sm-6">
                     <input
                       required="required"
                       placeholder="Enter Name *"
                       className="form-control"
-                      name="name"
                       type="text"
+                        id="name"
+                        name="name"
+                        className="form-control shadow-none"
+                        {...register("name", {
+                          required: "Name Required",
+                          maxLength: 20,
+                          minLength: 5,
+                        })}
+
                     />
+                    {errors.name && errors.name.type === "required" && (
+                        <div className="text-danger">
+                          You must enter your name
+                        </div>
+                      )}
+                      {errors.name && errors.name.type === "minLength" && (
+                        <div className="text-danger">
+                          Your name must be at least 5 characters
+                        </div>
+                      )}
+                      {errors.name && errors.name.type === "maxLength" && (
+                        <div className="text-danger">
+                          Your name must be at most 20 characters
+                        </div>
+                      )}
                   </div>
                   <div className="form-group col-sm-6">
                     <input
                       required="required"
                       placeholder="Enter Email *"
                       className="form-control"
+                      type="text"
+                      id="email"
                       name="email"
-                      type="email"
+                      className="form-control shadow-none"
+                      {...register("email", {
+                        required: true,
+                        pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      })}
                     />
+                    {errors.email && errors.email.type === "required" && (
+                        <div className="text-danger">
+                          You must enter your email
+                        </div>
+                      )}
+                      {errors.email && errors.email.type === "pattern" && (
+                        <div className="text-danger">
+                          You must enter a valid email
+                        </div>
+                      )}
                   </div>
-                  <div className="form-group col-sm-6">
+                  <div style={{marginTop:'10px'}} className="form-group col-sm-12">
                     <input
                       required="required"
                       placeholder="Enter Phone No *"
                       className="form-control"
-                      name="phone"
-                      type="tel"
+                      type="text"
+                      id="subject"
+                      className="form-control shadow-none"
+                      name="subject"
+                      {...register("subject", {
+                        required: true,
+                        maxLength: 50,
+                        minLength: 5,
+                      })}
                     />
+                     {errors.subject && errors.subject.type === "required" && (
+                        <div className="text-danger">
+                          You must enter a subject
+                        </div>
+                      )}
+                      {errors.subject &&
+                        errors.subject.type === "minLength" && (
+                          <div className="text-danger">
+                            Subject must be at least 5 characters
+                          </div>
+                        )}
+                      {errors.subject &&
+                        errors.subject.type === "maxLength" && (
+                          <div className="text-danger">
+                            Subject must be at most 50 characters
+                          </div>
+                        )}
                   </div>
-                  <div className="form-group col-sm-6">
-                    <div className="custom_select">
-                      <select className="form-control">
-                        <option>Select Course</option>
-                        <option>Select Course 1</option>
-                        <option>Select Course 2</option>
-                        <option>Select Course 3</option>
-                        <option>Select Course 4</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="form-group col-sm-12">
+                  
+                  <div style={{marginTop:'10px'}} className="form-group col-sm-12">
                     <textarea
                       required="required"
                       placeholder="Message *"
                       className="form-control"
-                      name="message"
                       rows={4}
                       defaultValue={""}
+                      type="text"
+                      name="message"
+                      id="message"
+                      rows="3"
+                      className="form-control md-textarea shadow-none"
+                      {...register("message", {
+                        required: true,
+                        minLength: 20,
+                      })}
                     />
+                    {errors.message && errors.message.type === "required" && (
+                        <div className="text-danger">
+                          You must enter a message
+                        </div>
+                      )}
+                      {errors.message &&
+                        errors.message.type === "minLength" && (
+                          <div className="text-danger">
+                            Message must be at least 20 characters
+                          </div>
+                        )}
                   </div>
-                  <div className="col-md-12">
-                    <button
-                      type="submit"
-                      title="Submit Your Message!"
-                      className="btn btn-default rounded-0"
-                      name="submit"
-                      value="Submit"
-                    >
-                      Register Now
-                    </button>
+                  <div style={{marginTop:'10px'}} className="col-md-12">
+                  {!loading && (
+                      <input
+                        type="submit"
+                        className="btn btn-primary shadow-none "
+                        value="Send"
+                      />
+                    )}
+                    {loading && (
+                      <div
+                        className="spinner-border text-primary"
+                        role="status"
+                      >
+                        <span className="sr-only">Loading...</span>
+                      </div>
+                    )}
                   </div>
                   <div className="col-sm-12">
                     <div id="alert-msg" className="alert-msg text-center" />

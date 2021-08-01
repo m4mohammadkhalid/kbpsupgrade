@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { getSkills } from "../../../actions/skillAction";
 
-const AboutUs = () => {
+const AboutUs = ({ reff }) => {
+  const skills = useSelector((state) => state.skills);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getSkills());
+  }, [dispatch]);
     return (
       <section style={{backgroundImage: 'url("assets/images/about.png")', borderRadius: '60px',backgroundRepeat:'no-repeat',backgroundPosition: 'center',backgroundSize: 'cover',paddingTop:'150px'}} className="overflow_hide">
       <div  className="container">
@@ -14,7 +22,14 @@ const AboutUs = () => {
                 <div className="card-object rotate">
                   <header></header>
                   <aside></aside>
-                  <main><blockquote className="message">May all the <em className="forgotten">tiny</em> black <em className="forget">insects</em> crawling on the peonies be my sons <em className="forget">and daughters</em> in future lives.</blockquote></main>
+                  <main>
+                    {skills.map((data)=>(
+                    <blockquote className="message">{data.type}</blockquote>
+
+
+                    ))}
+                  
+                  </main>
                   <footer className="author">KBPS SCHOOL</footer>
                 </div>
               </div>

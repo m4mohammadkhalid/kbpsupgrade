@@ -21,6 +21,7 @@ import GetAInquiry from "../components/Home/HomePage/GetAInquiry";
 import StudentSay from "../components/Home/HomePage/StudentSay";
 import Footer from "../components/Home/HomePage/Footer";
 import Header from "../components/Home/HomePage/Header";
+import Map from "../components/Home/HomePage/Map";
 
 
 
@@ -53,8 +54,7 @@ const HomePage = () => {
         <GetAInquiry />
         <StudentSay />
 
-
-      <Contacts />
+        <Map />
       <Footer  />
     </>
   );

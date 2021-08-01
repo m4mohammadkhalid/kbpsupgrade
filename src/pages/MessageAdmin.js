@@ -75,7 +75,7 @@ const MessageAdmin = () => {
                   <p className="card-text d-inline">{selectedMessage.email}</p>
                 </div>
                 <div className="card-title mt-2">
-                  <span className="text-warning me-3">Subject: </span>
+                  <span className="text-warning me-3">Number: </span>
                   <strong className="d-inline">
                     {selectedMessage.subject}
                   </strong>
