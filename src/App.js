@@ -18,6 +18,8 @@ import MessageAdmin from "./pages/MessageAdmin";
 import isLogin from "./shared/authorization";
 import ProjectAdmin from "./pages/ProjectAdmin";
 import NotFound from "./pages/NotFound";
+import EventIndex from "./components/Home/Event/EventIndex";
+import FacilityIndex from "./components/Home/Facility/FacilityIndex";
 
 function App() {
   const [isLogged, setIsLogged] = useState(isLogin);
@@ -42,6 +44,8 @@ function App() {
           <Route path="/gallery" exact component={IndexGallery} />
           <Route path="/about" exact component={AboutIndex} />
           <Route path="/contact" exact component={IndexContact} />
+          <Route path="/event" exact component={EventIndex} />
+          <Route path="/facility" exact component={FacilityIndex} />
 
           <Route path="*" component={NotFound} />
         </Switch>

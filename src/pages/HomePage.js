@@ -3,7 +3,6 @@
 
 
 import React, { useState, useEffect } from "react";
-import Contacts from "../components/Home/Contacts/Contacts";
 import isLogin from "../shared/authorization";
 import { useSelector } from "react-redux";
 import NoticeHeader from "../components/Home/HomePage/NoticeHeader";
@@ -22,6 +21,9 @@ import StudentSay from "../components/Home/HomePage/StudentSay";
 import Footer from "../components/Home/HomePage/Footer";
 import Header from "../components/Home/HomePage/Header";
 import Map from "../components/Home/HomePage/Map";
+import PrincipalNotice from "../components/Home/HomePage/PrincipalNotice";
+import NoticeBoard from "../components/Home/HomePage/NoticeBoard";
+
 
 
 
@@ -43,6 +45,9 @@ const HomePage = () => {
       {!isLogged && <Header  />}
       <Slider />
       <SchoolTime />
+      <PrincipalNotice />
+      <NoticeBoard />
+
       <WhyChoseUs />
       <Text />
       <AboutUs />
@@ -53,7 +58,6 @@ const HomePage = () => {
         <OurTeachers />
         <GetAInquiry />
         <StudentSay />
-
         <Map />
       <Footer  />
     </>

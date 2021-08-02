@@ -77,7 +77,7 @@ const GetAInquiry = ({ reff }) => {
                     <input
                       required="required"
                       placeholder="Enter Name *"
-                      className="form-control"
+                     
                       type="text"
                         id="name"
                         name="name"
@@ -109,7 +109,7 @@ const GetAInquiry = ({ reff }) => {
                     <input
                       required="required"
                       placeholder="Enter Email *"
-                      className="form-control"
+                     
                       type="text"
                       id="email"
                       name="email"
@@ -134,7 +134,7 @@ const GetAInquiry = ({ reff }) => {
                     <input
                       required="required"
                       placeholder="Enter Phone No *"
-                      className="form-control"
+                     
                       type="text"
                       id="subject"
                       className="form-control shadow-none"
@@ -168,7 +168,7 @@ const GetAInquiry = ({ reff }) => {
                     <textarea
                       required="required"
                       placeholder="Message *"
-                      className="form-control"
+                     
                       rows={4}
                       defaultValue={""}
                       type="text"

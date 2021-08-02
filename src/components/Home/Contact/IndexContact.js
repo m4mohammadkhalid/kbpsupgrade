@@ -35,30 +35,30 @@ const IndexContact = () => {
           </div>
           <div className="row">
             <div className="col-12">
-              <div className="box_shadow1 radius_all_10">
+              <div style={{backgroundColor: 'slategrey'}} className="box_shadow1 radius_all_10">
                 <div className="row no-gutters">
                   <div className="col-md-6 animation" data-animation="fadeInLeft" data-animation-delay="0.02s">
                     <div className="padding_eight_all">
                       <div className="field_form">
-                        <form method="post" name="enq">
+                        <form method="post" className="pt-md-2 form_transparent" name="enq">
                           <div className="row">
                             <div className="form-group col-12">
                               <input required="required" placeholder="Enter Name" id="first-name" className="form-control" name="name" type="text" />
                             </div>
-                            <div className="form-group col-12">
+                            <div style={{paddingTop:'10px'}} className="form-group col-12">
                               <input required="required" placeholder="Enter Email" id="email" className="form-control" name="email" type="email" />
                             </div>
-                            <div className="form-group col-12">
+                            <div style={{paddingTop:'10px'}} className="form-group col-12">
                               <input required="required" placeholder="Enter Phone No." id="phone" className="form-control" name="phone" type="tel" />
                             </div>
-                            <div className="form-group col-12">
+                            <div style={{paddingTop:'10px'}} className="form-group col-12">
                               <input placeholder="Enter Subject" id="subject" className="form-control" name="subject" type="text" />
                             </div>
-                            <div className="form-group col-lg-12">
+                            <div style={{paddingTop:'10px'}} className="form-group col-lg-12">
                               <textarea required="required" placeholder="Message" id="description" className="form-control" name="message" rows={3} defaultValue={""} />
                             </div>
-                            <div className="col-lg-12">
-                              <button type="submit" title="Submit Your Message!" className="btn btn-default" id="submitButton" name="submit" value="Submit">Submit</button>
+                            <div style={{paddingTop:'20px'}} className="col-lg-12">
+                              <button style={{backgroundColor:'blue', width:'160px', height:'50px'}} type="submit" title="Submit Your Message!" className="btn btn-default" id="submitButton" name="submit" value="Submit">Submit</button>
                             </div>
                             <div className="col-lg-12 text-center">
                               <div id="alert-msg" className="alert-msg text-center" />
